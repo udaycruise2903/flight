@@ -1,0 +1,171 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #172014;
+    margin: 0;
+    padding: 0;
+    color: #a8aaa8
+}
+
+h3 {
+    text-align: center;
+}
+
+.container {
+    max-width: 1200;
+    margin: 0 auto;
+    padding: auto;
+
+}
+
+.form {
+    margin: auto;
+    padding: auto;
+}
+
+.form-layout {
+    display: grid;
+    margin: 2% 40% 1% 40%;
+    gap: 20px;
+}
+
+.form-dropdown {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+}
+
+select {
+    border-radius: 1px;
+    border: 1px solid #ccc;
+}
+
+.search-btn {
+    background-color: #38B8A6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+    margin: 1% 40% 0% 40%;
+}
+
+.search-btn:hover {
+    background-color: #519289;
+}
+
+.searchresults-container {
+    margin: 5% 25% 2% 25%;
+
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.flight-info .flight-path {
+    font-size: 15px;
+}
+
+.flight-path .arrow {
+    margin: 0 5px;
+    font-size: 20px;
+}
+
+.result-card {
+    background-color: #1A4D2E;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: transform 0.2s ease-in-out;
+    text-align: center;
+}
+
+.result-card:hover {
+    transform: translateY(-5px);
+}
+
+.result-card h3 {
+    margin-top: 0;
+    font-weight: 100 !important;
+    font-size: 20px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cabin-economy,
+.cabin-business,
+.cabin-first {
+    padding: 10px;
+}
+
+.cabin-economy .price-container,
+.cabin-business .price-container,
+.cabin-first .price-container {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 5px;
+    text-align: center;
+}
+
+.cabin-economy .miles,
+.cabin-business .miles,
+.cabin-first .miles {
+    font-size: 24px !important;
+    font-weight: bold !important;
+    margin: 0;
+}
+
+.cabin-economy .tax,
+.cabin-business .tax,
+.cabin-first .tax {
+    font-size: 14px !important;
+    margin: 0;
+}
+
+.cabin-economy .na,
+.cabin-business .na,
+.cabin-first .na {
+    font-size: 24px !important;
+    font-weight: bold !important;
+    margin: 0;
+}
+
+.cabin-economy .label,
+.cabin-business .label,
+.cabin-first .label {
+    font-size: 14px !important;
+    margin: 5px 0 0 0;
+}
+
+.empty-response {
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+}
+
+.card-header {
+    display: unset;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* .logo-container {
+    
+  } */
+
+.partner-logo {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
